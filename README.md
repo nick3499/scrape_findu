@@ -3,6 +3,8 @@
 - Scrape findu.com for weather archive&mdash;the latest record.
 - Python 3, urllib.request(), BeautifulSoup(), datetime.time(), regex
 
+![screen capture](screen_capture.png)
+
 ## Tested With
 
 - Python 3.7.5
