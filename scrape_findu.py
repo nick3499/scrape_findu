@@ -13,7 +13,7 @@ _data = _soup.find('tt').text
 observ_list = _data.splitlines()
 # compiled regex pattern
 rgx = re.compile(
-    r'@([0-9]{6})z[0-9]{4}.[A-Z0-9]{3}\/[0-9]{5}.[A-Z0-9]{3}_([0-9]{3})\/([0-9]{3})g([0-9]{3})t([0-9]{3})r([0-9]{3})p([0-9]{3})P([0-9]{3})b([0-9]{5})h([0-9]{2})[l|L]([0-9]{3})')
+    r'@([\d]{6})z[\d]{4}.[\w]{3}\/[\d]{5}.[\w]{3}_([\d]+)\/([\d]{3})g([\d]{3})t([\d]{3})r([\d]{3})p([\d]{3})P([\d]{3})b([\d]{5})h([\d]{2})L([\d]{3}).')
 # captured group list tuple
 grp = rgx.findall(observ_list[1])
 # named groups
