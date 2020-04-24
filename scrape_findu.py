@@ -1,6 +1,5 @@
 #! /bin/python3
-'''Scrape KC9DNQ-3 PWS data from findu.com.
-remember to fix observation time'''
+'''Scrape KC9DNQ-3 PWS data from findu.com. Available under MIT license.'''
 import urllib.request
 from bs4 import BeautifulSoup
 from datetime import time
